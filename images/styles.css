@@ -1,0 +1,604 @@
+:root {
+  --main-title-color: #ffffff;
+  --second-title-color: #303030;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
+/* =====Components===== */
+
+.white-btn:focus,
+.white-btn:hover {
+  background-color: #ff6c00;
+  color: var(--main-title-color, #ffffff);
+}
+.dark-btn:focus,
+.dark-btn:hover {
+  background-color: #ff6c00;
+  color: var(--main-title-color, #ffffff);
+}
+.dark-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  background-color: transparent;
+  border-radius: 25px;
+  width: 160px;
+  height: 40px;
+
+  color: #303030;
+}
+.white-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  background-color: transparent;
+  border-radius: 25px;
+  width: 160px;
+  height: 40px;
+
+  color: var(--main-title-color, #ffffff);
+}
+
+.media-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--second-title-color);
+}
+.media-list-link:hover,
+.media-list-link:focus {
+  color: #ff6c00;
+}
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  /* color: rgba(157, 164, 189, 0.6); */
+}
+.suptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+.suptitle-theme-dark {
+  color: rgba(157, 164, 189, 0.6);
+}
+.suptitle-theme-light {
+  color: var(--second-title-color);
+}
+.online-list-item:hover,
+.online-list-item:focus {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* =====Components===== */
+/*======== Header======= */
+.menu-list {
+  display: flex;
+  gap: 30px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 130px;
+}
+.main-header {
+  background-color: grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.menu-list-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--main-title-color, #ffffff);
+}
+.menu-list-link:hover,
+.menu-list-link:focus {
+  color: #ff6c00;
+}
+.connection {
+  display: flex;
+  align-items: center;
+}
+.contact-phone-number {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--main-title-color, #ffffff);
+}
+.contact-phone-number {
+  margin-right: 63px;
+}
+.contact-phone-number:hover,
+.contact-phone-number:focus {
+  color: #ff6c00;
+}
+
+/*======== Header======= */
+/* =====Hero====== */
+
+.hero-container {
+  display: flex;
+}
+.media-list {
+  width: 100px;
+}
+.main-wrap {
+  background-color: #797c8a;
+  background-image: url(../images/slider.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+  padding: 272px 100px 208px 100px;
+}
+
+.main-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--main-title-color, #ffffff);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+}
+.main-title::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  display: block;
+}
+.main-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  max-width: 360px;
+
+  color: #9da4bd;
+}
+/* =====Hero====== */
+/* ===========About======== */
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+.about-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+
+  color: var(--second-title-color);
+}
+.main-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  margin-bottom: 42px;
+
+  color: #555555;
+}
+.about-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  margin-bottom: 20px;
+
+  letter-spacing: 0.02em;
+
+  color: #555555;
+}
+.about-wrap {
+  max-width: 470px;
+}
+
+/* =========About=========== */
+/* =========Prices=========== */
+.prices {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #111319;
+  background-image: url(../images/barber.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.prices-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  margin-bottom: 44px;
+
+  color: var(--main-title-color, #ffffff);
+}
+.prices-wrap {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+.prices-list {
+  border: 1px solid #ffffff;
+  padding: 30px 20px;
+  width: calc((100%-30px) / 2);
+}
+.prices-list:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices-list:last-child {
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+}
+.prices-item + .prices-item {
+  margin-top: 20px;
+}
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+.prices-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  background-color: transparent;
+  border-radius: 25px;
+  width: 160px;
+  height: 40px;
+
+  color: var(--main-title-color, #ffffff);
+}
+.prices-btn:focus,
+.prices-btn:hover {
+  background-color: #ff6c00;
+  color: var(--main-title-color, #ffffff);
+}
+.prices-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+/* =========Prices=========== */
+/* =========Benefits========= */
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  border: 1px solid #000000;
+}
+.benefits-item span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+}
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+
+  color: #303030;
+}
+.benefits-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+
+  color: var(--second-title-color);
+}
+.benefits-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #555555;
+}
+/* =========Benefits========= */
+/* ========Barbers===== */
+.barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.barbers-title {
+  font-family: "Raleway" sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  margin-bottom: 44px;
+
+  color: var(--second-title-color, #303030);
+}
+.barbers-list {
+  display: flex;
+  gap: 30px;
+}
+.barbers-item {
+  width: calc((100%-60px) / 3);
+}
+.barbers-item-wrap {
+  padding-top: 30px;
+}
+.barbers-item-title {
+  font-family: "Open Sans" sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+  margin-bottom: 8px;
+}
+.barbers-item-text {
+  font-family: "Open Sans" sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 30px;
+
+  color: #ff6c00;
+}
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.barbers-soc-item {
+  width: 44px;
+  height: 44px;
+}
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+}
+.barbers-soc-icon {
+  fill: #ffffff;
+}
+.barbers-soc-link:is(:hover, :focus) {
+  background-color: cyan;
+}
+/* ========Barbers===== */
+
+/* ========test======== */
+/* ========test========= */
+.test {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.test-list {
+  display: flex;
+  gap: 30px;
+}
+.test-item {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+}
+.test-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test-icon {
+  fill: #999999;
+}
+.test-icon:is(:hover, :focus) {
+  fill: rgb(119, 0, 255);
+}
+.test-link:is(:hover, :focus) {
+  border-color: rgb(119, 0, 255);
+}
+.test-link:is(:hover, :focus) > .test-icon {
+  fill: rgb(119, 0, 255);
+}
+
+/* ========Pictures==== */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* ========Pictures==== */
+/* ========Address-Contacts====== */
+.address-contacts {
+  background: #191c26;
+}
+.address-contacts-title {
+  font-family: "Raleway" sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.address-contacts-map {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.address-contacts-item-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+.address-contacts-item-email {
+  font-family: "Open Sans" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+
+  color: #9da4bd;
+}
+.address-contacts-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+.online-title {
+  font-family: "Raleway" sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.online-list-item {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+/* ========Address-Contacts====== */
+/* ========Footer================ */
+.footer-copyright {
+  font-family: "Open Sans" sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+
+.footer-media-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
